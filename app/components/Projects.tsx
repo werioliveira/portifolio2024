@@ -3,12 +3,18 @@ import Image from "next/image";
 import SkeletonProjects from "./SkeletonProjects";
 import { useEffect, useState } from "react";
 import projectsJson from '../projectsJson.json'
-
+interface Projects {
+  id: number,
+  title: string,
+  name: string,
+  html_url: string,
+  description: string,
+}
 const Projects = () => {
-  const [projects, setProjects] = useState(null);
+  const [projects, setProjects] = useState<Projects[]>([]);
   const [loading, setLoading] = useState(true);
   const json = projectsJson.projects;
-  let link = 'https://via.placeholder.com/400x400'
+  const link = 'https://via.placeholder.com/400x400';
   useEffect(() => {
     const fetchProjects = async () => {
       try {
