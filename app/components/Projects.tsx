@@ -47,7 +47,7 @@ const Projects = () => {
                 <div className="relative w-full h-[400px] pb-[50%]"> {/* Proporção de 2:1 (400x200) */}
                   <Image
                     src={
-                      projectsJson.projects.find((json) => json.name === project.name)?.image || link
+                      json.find((json) => json.name === project.name)?.image || link
                     }
                     alt={project.title}
                     layout="fill"
