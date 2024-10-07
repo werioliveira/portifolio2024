@@ -1,0 +1,46 @@
+{
+    "projects":[
+        {
+            "name": "ifraction",
+            "image": "https://i.imgur.com/vtIFDwG.png"
+        },
+        {
+            "name": "mir4calculator",
+            "image": "https://i.imgur.com/vC0pCn0.png"
+        },
+		{
+			"name": "portifolio",
+			"image": "https://i.imgur.com/8lWlSHW.png"
+		},
+		{
+			"name": "loremGenerator",
+			"image": "https://i.imgur.com/dZ2duId.png"
+		},
+        {
+            "name": "bin2dec2bin",
+            "image": "https://i.imgur.com/zEGvwwU.png"
+        },
+        {
+            "name": "gitProfile",
+            "image": "https://i.imgur.com/wepkpd2.png"
+        },
+        {
+            "name": "todolist",
+            "image": "https://i.imgur.com/rOZGhi2.png"
+        },
+        {
+            "name": "werioliveira",
+            "image": "https://i.imgur.com/eCzigi0.png"
+        },
+        {
+            "name": "portifolio1.0",
+            "image": "https://i.imgur.com/AO5TaT1.png"
+        },
+        {
+            "name": "e-commerce",
+            "image": "https://i.imgur.com/hgU3qH7.png"
+        }
+
+    ]
+
+}
