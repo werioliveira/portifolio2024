@@ -25,7 +25,7 @@ export default function ContactSection() {
   }
 
   return (
-    <section id="contact" className="py-16 md:py-24 bg-gray-100 dark:bg-gray-800">
+    <section id="contact" className="py-16 md:py-24 bg-gray-100 bg-opacity-50  dark:bg-gray-800 dark:bg-opacity-25">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-center text-gray-800 dark:text-white mb-8">Entre em Contato</h2>
         <form onSubmit={handleSubmit} className="space-y-6">

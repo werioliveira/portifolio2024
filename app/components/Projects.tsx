@@ -55,9 +55,10 @@ const Projects = () => {
                     src={
                       json.find((json) => json.name === project.name)?.image || link
                     }
-                    alt={project.title}
-                    layout="fill"
-                    objectFit="contain"
+                    alt={'project title'}
+                    fill={true}
+                    sizes="(max-width: 768px) 500px"
+                    style={{objectFit: 'contain'}}
                     className="rounded-t-lg"
                   />
                 </div>

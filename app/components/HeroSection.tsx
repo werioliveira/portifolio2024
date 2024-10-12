@@ -1,8 +1,10 @@
 import Image from 'next/image'
+import Terra3D from './Terra3D'
 
 export default function HeroSection() {
   return (
     <section className="flex flex-col-reverse md:flex-row items-center justify-between py-16 md:py-24">
+
       <div className="md:w-1/2 mt-8 md:mt-0">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-4">
           Olá, eu sou <span className="text-blue-600 dark:text-blue-400">Weri Oliveira</span>
@@ -17,15 +19,12 @@ export default function HeroSection() {
           Ver Projetos
         </a>
       </div>
-      <div className="md:w-1/2 flex justify-center">
-        <div className="relative w-64 h-64 md:w-80 md:h-80">
-          <Image
-            src="/aiimg.png"
-            alt="Seu Nome"
-            layout="fill"
-            objectFit="cover"
-            className="rounded-full shadow-lg"
-          />
+      <div className="md:w-2/3 flex justify-center">
+      {/* 
+      */}
+      
+        <div className="relative w-96 h-96 md:w-96 md:h-96 overflow-visible">
+        <Terra3D/>
         </div>
       </div>
     </section>

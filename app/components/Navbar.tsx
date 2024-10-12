@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
 import { Moon, Sun, Menu, X } from 'lucide-react'
+import Image from 'next/image'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -14,10 +15,11 @@ export default function Navbar() {
   }, [])
 
   return (
-    <nav className="bg-white dark:bg-gray-800 shadow-md">
+    <nav className=" bg-white dark:bg-gray-800 bg-opacity-0 dark:bg-opacity-25 shadow-md z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
+            <Image src={'/logo.png'} width={32} height={32} alt='logo' className='mr-2 w-[32px] h-[32px]'/>
             <a href="#" className="text-xl font-bold text-gray-800 dark:text-white">
               Weri Oliveira
             </a>
