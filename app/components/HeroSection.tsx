@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Terra3D from './Terra3D'
 
 export default function HeroSection() {
@@ -20,8 +19,6 @@ export default function HeroSection() {
         </a>
       </div>
       <div className="md:w-2/3 flex justify-center">
-      {/* 
-      */}
       
         <div className="relative w-96 h-96 md:w-96 md:h-96 overflow-visible">
         <Terra3D/>

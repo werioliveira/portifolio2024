@@ -2,11 +2,11 @@
 import React, { useState, useRef, useEffect, Suspense } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Points, PointMaterial } from '@react-three/drei';
-//@ts-ignore
-import * as random from 'maath/random/dist/maath-random.esm';
+import * as random from "maath/random";
+import * as THREE from 'three'
 
-const StarBackground: React.FC = (props: any) => {
-  const ref: any = useRef();
+const StarBackground: React.FC = () => {
+const ref = useRef<THREE.Points>(null!);
   const [sphere] = useState(() => {
     const positions = new Float32Array(5000 * 3); // Cada ponto tem 3 coordenadas (x, y, z)
     random.inSphere(positions, { radius: 1.2 });
@@ -49,7 +49,7 @@ const StarBackground: React.FC = (props: any) => {
 
   return (
     <group rotation={[0, 0, Math.PI / 4]}>
-      <Points ref={ref} positions={sphere} stride={3} frustumCulled {...props}>
+      <Points ref={ref} positions={sphere} stride={3} frustumCulled >
         <PointMaterial
           transparent
           color={color} // Define a cor com base no tema

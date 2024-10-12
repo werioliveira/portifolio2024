@@ -1,19 +1,19 @@
 'use client'
-import React from 'react'
+import React from 'react';
 import { Environment, OrbitControls, useGLTF } from "@react-three/drei";
-import {Canvas} from "@react-three/fiber"
+import {Canvas} from "@react-three/fiber";
+import * as THREE from 'three';
 
-export function DModel(props) {
-  const { nodes, materials } = useGLTF('/Polygon_Planet_1012005902.glb')
+export function DModel() {
+  const { nodes } = useGLTF('/Polygon_Planet_1012005902.glb')
 
   return (
-    <group {...props} dispose={null}>
+    <group dispose={null}>
       <mesh
         castShadow
         receiveShadow
-        
-        geometry={nodes.mesh_0.geometry}
-        material={nodes.mesh_0.material}
+        geometry={(nodes.mesh_0 as THREE.Mesh).geometry} // Assert type to Mesh
+        material={(nodes.mesh_0 as THREE.Mesh).material} // Assert type to 
         scale={2.5}
       />
     </group>
