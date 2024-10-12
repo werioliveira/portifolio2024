@@ -2,31 +2,39 @@
     "projects":[
         {
             "name": "ifraction",
-            "image": "https://i.imgur.com/vtIFDwG.png"
+            "image": "https://i.imgur.com/vtIFDwG.png",
+            "tecnologies": ["ReactNative"]
         },
         {
             "name": "mir4calculator",
-            "image": "https://i.imgur.com/vC0pCn0.png"
+            "image": "https://i.imgur.com/vC0pCn0.png",
+            "tecnologies": ["ReactJS"]
         },
 		{
 			"name": "portifolio",
-			"image": "https://i.imgur.com/8lWlSHW.png"
+			"image": "https://i.imgur.com/8lWlSHW.png",
+            "tecnologies": ["ReactJS"]
 		},
 		{
 			"name": "loremGenerator",
-			"image": "https://i.imgur.com/dZ2duId.png"
+			"image": "https://i.imgur.com/dZ2duId.png",
+            "tecnologies": ["NodeJS", "EJS"]
 		},
         {
             "name": "bin2dec2bin",
-            "image": "https://i.imgur.com/zEGvwwU.png"
+            "image": "https://i.imgur.com/zEGvwwU.png",
+            "tecnologies": ["HTML", "Javascript"]
         },
         {
             "name": "gitProfile",
-            "image": "https://i.imgur.com/wepkpd2.png"
+            "image": "https://i.imgur.com/wepkpd2.png",
+            "tecnologies": ["NodeJS", "EJS"]
+
         },
         {
             "name": "todolist",
-            "image": "https://i.imgur.com/rOZGhi2.png"
+            "image": "https://i.imgur.com/rOZGhi2.png",
+            "tecnologies": ["ReactJS"]
         },
         {
             "name": "werioliveira",
@@ -38,11 +46,13 @@
         },
         {
             "name": "e-commerce",
-            "image": "https://i.imgur.com/hgU3qH7.png"
+            "image": "https://i.imgur.com/hgU3qH7.png",
+            "tecnologies": ["NodeJS", "ReactJS"]
         },
         {
             "name": "portifolio2024",
-            "image": "https://i.imgur.com/Fqkzpt1.png"
+            "image": "https://i.imgur.com/Fqkzpt1.png",
+            "tecnologies": ["NextJS"]
         }
 
     ]
