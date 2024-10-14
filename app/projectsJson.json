@@ -53,6 +53,11 @@
             "name": "portifolio2024",
             "image": "https://i.imgur.com/Fqkzpt1.png",
             "tecnologies": ["NextJS"]
+        },
+        {
+            "name": "timmer-pico7-mir4",
+            "image": "https://i.imgur.com/lDfVOyW.png",
+            "tecnologies": ["ReactJS"]
         }
 
     ]

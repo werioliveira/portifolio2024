@@ -4,6 +4,7 @@ import SkeletonProjects from './SkeletonProjects';
 import { useEffect, useState } from 'react';
 import projectsJson from '../projectsJson.json';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 interface Projects {
   id: number;
@@ -105,7 +106,7 @@ const Projects = () => {
                   </a>
                   {project.homepage?
                     <a
-                    href={project.homepage}
+                    href={project.homepage ? project.homepage : '#'}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 mt-2"
