@@ -4,7 +4,6 @@ import SkeletonProjects from './SkeletonProjects';
 import { useEffect, useState } from 'react';
 import projectsJson from '../projectsJson.json';
 import { motion } from 'framer-motion';
-import Link from 'next/link';
 
 interface Projects {
   id: number;
