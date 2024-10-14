@@ -12,6 +12,7 @@ interface Projects {
   html_url: string;
   description?: string;
   technologies?: string[];
+  homepage?: string;
 }
 
 const Projects = () => {
@@ -79,8 +80,8 @@ const Projects = () => {
                   className="rounded-lg"
                 />
               </div>
-{/* Verso do card */}
-<div
+              {/* Verso do card */}
+              <div
                 className="absolute inset-0 w-full h-full rounded-lg shadow-lg overflow-hidden bg-white dark:bg-gray-800"
                 style={{ transform: 'rotateY(180deg)', backfaceVisibility: 'hidden' }}
               >
@@ -102,6 +103,16 @@ const Projects = () => {
                   >
                     Ver Projeto
                   </a>
+                  {project.homepage?
+                    <a
+                    href={project.homepage}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 mt-2"
+                    >
+                      Preview
+                    </a>
+                  :''}
                 </div>
               </div>
             </motion.div>
