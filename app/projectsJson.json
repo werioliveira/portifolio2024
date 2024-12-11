@@ -59,11 +59,19 @@
             "image": "https://i.imgur.com/lDfVOyW.png",
             "tecnologies": ["ReactJS"]
         },
+<<<<<<< HEAD
 	{
 		"name": "wslibrary",
 		"image": "https://i.imgur.com/v2PgmpA.png",
 		"tecnologies": ["NextJS", "TypeScript"]
 	}
+=======
+        {
+            "name": "wslibrary",
+            "image": "https://i.imgur.com/v2PgmpA.png",
+            "tecnologies": ["NextJS", "TypeScript"]
+        }
+>>>>>>> 0032a10 (add analitics)
 
     ]
 
