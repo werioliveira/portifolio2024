@@ -3,7 +3,6 @@ import HeroSection from './components/HeroSection'
 import ProjectsSection from './components/ProjectsSection'
 import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
-import StarsCanvas from './components/StarBackground'
 import { ScrollToTop } from './components/GoTop'
 import { WhatsAppFloating } from './components/WhatsAppFloating'
 
@@ -17,8 +16,7 @@ export default function Home() {
 
       <WhatsAppFloating/>
       </div>
-      {/* StarsCanvas com z-index intermediário */}
-      <StarsCanvas />
+
       
       {/* Navbar e outros elementos interativos acima do StarsCanvas */}
       <nav className="relative z-10 ">
